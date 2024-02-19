@@ -13,18 +13,39 @@ export function SearchRecomendation(){
             channel : "Warner Hoes",
             Views : "2 Lakh",
             uploadedTime : "1 Year Ago"
-        }
+        },
+        {
+            linkUrl: "https://cdn.pixabay.com/photo/2016/11/29/12/13/fence-1869401_640.jpg",
+            title : "HARDWELL LIVE @ ULTRA MUSIC FESTIVAL MIAMI 2023",
+            channel : "Hardwell",
+            Views : "2.5 Lakh",
+            uploadedTime : "2 Year Ago"
+        },
+        {
+            linkUrl: "https://cdn.pixabay.com/photo/2012/12/27/19/40/chain-link-72864_640.jpg",
+            title : "Cypher, what the f*ck is that tripwire?",
+            channel : "Cypher",
+            Views : "1 Lakh",
+            uploadedTime : "3 Year Ago"
+        },
+        {
+            linkUrl: "https://cdn.pixabay.com/photo/2013/12/11/03/13/puzzle-226743_640.jpg",
+            title : "Hardwell - Main Stage - Mysteryland 2023",
+            channel : "Hardwell",
+            Views : "10 Lakh",
+            uploadedTime : "4 Year Ago"
+        },
 ]
     return (
         <div>
             <SearchTypes />
-            {/* <VideoRecomendationCard /> */}
             {videoCardValues.map((obj)=>(
                 <VideoRecomendationCard 
                 title={obj.title} 
                 channel={obj.channel} 
                 views={obj.Views} 
                 uploadedTime={obj.uploadedTime} 
+                linkUrl={obj.linkUrl} 
                 />
             ))}
         </div>
@@ -57,7 +78,7 @@ function VideoRecomendationCard({linkUrl,title,channel,views,uploadedTime} : any
     return (
         <div>
             <div className="flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-stone-900 dark:hover:bg-stone-800 mb-3">
-                <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://www.hubspot.com/hubfs/Google%20Drive%20Integration/How%20to%20Create%20a%20Video%20Background%20With%20CSS.jpeg" alt=""></img>
+                <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={linkUrl} alt=""></img>
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <div className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{title} </div>
                     <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">{channel} </p>

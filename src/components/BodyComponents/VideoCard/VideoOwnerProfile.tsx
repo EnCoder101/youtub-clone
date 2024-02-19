@@ -63,7 +63,7 @@ function Subscribe(){
 function Like(){
     return (
         <div className="flex mr-4">
-            <button className="mr-2 pt-1 flex text-white bg-stone-800 hover:bg-stone-900  font-medium rounded-tl-2xl rounded-bl-2xl text-sm px-3 py-1 me-0 mb-2 dark:bg-stone-800 dark:hover:bg-stone-700 dark:border-stone-700">
+            <button className="pt-1 flex text-white bg-stone-800 hover:bg-stone-900  font-medium rounded-tl-2xl rounded-bl-2xl text-sm px-3 py-1 me-0 mb-2 dark:bg-stone-800 dark:hover:bg-stone-700 dark:border-stone-700">
                 <div className="mr-1.5 pt-0.5">
                     <GrLike className="w-4 h-4" />
                 </div>
