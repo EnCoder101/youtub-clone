@@ -1,5 +1,5 @@
-import { SearchRecomendation } from "./SearchRecomendation"
-import { VideoCard } from "./VideoCard"
+import { SearchRecomendation } from "./SearchRecomendation/SearchRecomendation"
+import { VideoCard } from "./VideoCard/VideoCard"
 
 export function BodyComponent(){
     return (

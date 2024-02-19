@@ -1,4 +1,4 @@
-import { VideoComments } from "./VideoComments"
+import { VideoComments } from "./VideoComments/VideoComments"
 import { VideoDescription } from "./VideoDescription"
 import { VideoOwnerProfile } from "./VideoOwnerProfile"
 
