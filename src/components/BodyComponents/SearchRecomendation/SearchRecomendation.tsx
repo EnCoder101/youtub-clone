@@ -35,6 +35,13 @@ export function SearchRecomendation(){
             Views : "10 Lakh",
             uploadedTime : "4 Year Ago"
         },
+        {
+            linkUrl: "https://images.inc.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg",
+            title : "2010s roadtrip mix ~nostalgia playlist",
+            channel : "Mobu",
+            Views : "10 Crore",
+            uploadedTime : "1 Day Ago"
+        },
 ]
     return (
         <div>
